@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Itim", cursive;
+}
+
+body {
+  margin: 20px 60px;
+}
+
+a {
+  text-decoration: none;
+  color: crimson;
+}
+
+nav {
+  padding: 1rem;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.drop-container {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px dashed #555;
+  color: #444;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.drop-container:hover {
+  background: #eee;
+  border-color: #111;
+}
+
+.drop-container:hover .drop-title {
+  color: #222;
+}
+
+.drop-title {
+  color: #444;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+
+#speedDisplay {
+  font-size: 16rem;
+  font-weight: bold;
+  color: crimson;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.about_section {
+  margin-top: 4rem;
+}
+
+.about_section h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.about_section p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 10px 30px;
+  }
+  #speedDisplay {
+    font-size: 10rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    margin: 5px 15px;
+  }
+  .drop-container {
+    height: 300px;
+  }
+  .about_section p {
+    font-size: 1rem;
+  }
+  .about_section h2 {
+    font-size: 1rem;
+  }
+  #speedDisplay {
+    font-size: 5rem;
+  }
+}
